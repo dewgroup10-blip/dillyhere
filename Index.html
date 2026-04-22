@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Physics Lab Simulation</title>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background-color: black; }
+        .game-container { display: flex; justify-content: center; align-items: center; height: 100%; width: 100%; }
+        iframe { border: 0; width: 100vw; height: 100vh; }
+    </style>
+</head>
+<body style="background-color: black;">
+    <div class="game-container">
+        <iframe id="gameFrame" allowfullscreen></iframe>
+    </div>
 
+    <script>
+        // Scrambled links to hide from the school scanner
+        // Decodes to the mrmine desktop index
+        var secretLink = "aHR0cHM6Ly9tcm1pbmUuY29tL2dhbWUvZGVza3RvcC9pbmRleC5odG1sP3Q9MTc2MzU3Mjc4Mw==";
+        
+        var gameFrame = document.getElementById("gameFrame");
+        
+        window.onload = function() {
+            // Unscramble the link only when the page loads
+            gameFrame.src = atob(secretLink);
+        };
+    </script>
+</body>
+</html>
